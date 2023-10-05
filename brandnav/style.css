@@ -1,0 +1,74 @@
+
+body{
+  margin:0;  
+  padding:0;
+
+}
+
+
+.outer{
+   text-align: center;
+   padding:20px;
+}
+.page{
+   width:800px;
+   height:95vh;
+   display: inline-block;
+   text-align:left;
+   padding:10px;
+   background-color: white;
+}
+a{
+  color: #333336;
+  font-size:16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right:50px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 50vh;
+}
+
+.menu {
+  justify-content: top;
+
+
+}
+
+img {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+
+a:hover {
+  color:black;  
+ }
+  a:active {
+  color:#black;
+}
+.nav{
+  font-family: helvetica;
+   margin-left:10px;
+   text-align: right;
+}
+
+a{
+  color: #black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #black;
+  
+}
+
+
+
+  
+	  
