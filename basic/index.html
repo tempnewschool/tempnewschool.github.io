@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined Animations</title>
+    <style>
+        body {
+            background-color: lilac;
+        }
+        .outer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .page {
+            text-align: center;
+        }
+        .a_box {
+            display: inline-block;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .animation1 {
+            animation: animate1 5s linear infinite;
+        }
+        .animation2 {
+            animation: animate2 4s ease-in-out infinite;
+        }
+        .animation3 {
+            animation: animate3 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+        }
+        @keyframes animate1 {
+            0% {
+                transform: scale(1);
+            }
+            30% {
+                transform: scale(1.5) rotate(30deg);
+            }
+            70% {
+                transform: scale(1.2) rotate(-20deg);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes animate2 {
+            0% {
+                transform: rotate(0deg);
+            }
+            30% {
+                transform: rotate(180deg);
+            }
+            70% {
+                transform: rotate(90deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes animate3 {
+            0% {
+                background-color: blue;
+            }
+            30% {
+                background-color: green;
+            }
+            70% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="page">
+            <div class="a_box animation1">
+                Animation 1: A
+            </div>
+            <div class="a_box animation2">
+                Animation 2: A
+            </div>
+            <div class="a_box animation3">
+                Animation 3: A
+            </div>
+        </div>
+    </div>
+</body>
+</html>
