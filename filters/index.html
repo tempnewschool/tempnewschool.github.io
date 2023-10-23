@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filter Animation</title>
+    <style>
+        .my_filter {
+            -webkit-filter: grayscale(100%) blur(10px);
+            filter: grayscale(100%) blur(10px);
+            width: 200px; /* Set the desired width */
+            height: auto; /* Automatically adjusts the height to maintain aspect ratio */
+            transition: filter 1s;
+        }
+
+        .my_filter:hover {
+            animation: filterAnimation 3s forwards;
+        }
+
+        @keyframes filterAnimation {
+            0% {
+                -webkit-filter: grayscale(100%) blur(10px);
+                filter: grayscale(100%) blur(10px);
+            }
+            100% {
+                -webkit-filter: grayscale(0) blur(0);
+                filter: grayscale(0) blur(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="my_filter" src="img/flower.jpg" alt="Flower Image">
+</body>
+
+</html>
