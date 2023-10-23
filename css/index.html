@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Animation Assignment</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s;
+        }
+
+        .element {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            transition: transform 0.5s, filter 0.5s;
+        }
+
+        .container:hover .element {
+            transform: scale(1.2); /* Scales the element on hover */
+            filter: grayscale(100%); /* Applies grayscale filter on hover */
+            background-color: #f1c40f; /* Changes the background color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="element"></div>
+    </div>
+</body>
+
+</html>
